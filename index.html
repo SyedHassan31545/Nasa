@@ -1,0 +1,241 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NASA Navbar</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet"/>
+<body>
+
+    <nav>
+  <div class="nav-left">
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+ 
+    <div class="explore-wrapper">
+      <button class="explore-btn" aria-label="Explore menu">
+        <span class="explore-label">Explore</span>
+        <span class="explore-icon">
+          <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 1l5 5 5-5"/>
+          </svg>
+        </span>
+      </button>
+      <div class="explore-dropdown">
+        <a href="#">Missions</a>
+        <a href="#">Science</a>
+        <a href="#">Technology</a>
+        <a href="#">Humans in Space</a>
+        <a href="#">Solar System</a>
+        <a href="#">Universe</a>
+        <a href="#">Earth</a>
+        <a href="#">Climate Change</a>
+      </div>
+    </div>
+ 
+    <div class="search-wrap">
+      <input class="search-input" type="text" placeholder="Search" aria-label="Search NASA"/>
+    </div>
+  </div>
+ 
+  <div class="nav-center">
+    <img src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg" alt="" class="nasa-logo"/>
+  </div>
+ 
+  <div class="nav-right">
+    <div class="dropdown-wrapper">
+      <button class="dropdown-btn" aria-label="News and Events">
+        <span class="btn-label">News &amp; Events</span>
+        <svg class="chevron" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l5 5 5-5"/></svg>
+      </button>
+      <div class="dropdown-menu">
+        <a href="#">Latest News</a>
+        <a href="#">Press Releases</a>
+        <a href="#">Blogs</a>
+        <a href="#">Upcoming Events</a>
+        <a href="#">On-Demand Webcasts</a>
+        <a href="#">Social Media</a>
+      </div>
+    </div>
+ 
+    <div class="dropdown-wrapper">
+      <button class="dropdown-btn" aria-label="Multimedia">
+        <span class="btn-label">Multimedia</span>
+        <svg class="chevron" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l5 5 5-5"/></svg>
+      </button>
+      <div class="dropdown-menu">
+        <a href="#">Images</a>
+        <a href="#">Videos</a>
+        <a href="#">Podcasts</a>
+        <a href="#">Galleries</a>
+        <a href="#">3D Resources</a>
+        <a href="#">NASA Apps</a>
+      </div>
+    </div>
+ 
+    <div class="nasaplus-wrapper">
+      <button class="nasaplus-btn" aria-label="NASA Plus">
+        <span class="btn-label">NASA+</span>
+        <svg class="chevron" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l5 5 5-5"/></svg>
+      </button>
+      <button class="live-btn" aria-label="NASA Live">
+        <span class="live-dot"></span>Live
+      </button>
+      <div class="nasaplus-dropdown">
+        <a href="#">Watch NASA+</a>
+        <a href="#">Live Streams</a>
+        <a href="#">Shows &amp; Series</a>
+        <a href="#">Documentaries</a>
+        <a href="#">Schedule</a>
+      </div>
+    </div>
+ 
+    <button class="mobile-search-icon" id="mobileSearchToggle" aria-label="Search">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="7" cy="7" r="5"/>
+        <line x1="10.5" y1="10.5" x2="14" y2="14"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+ 
+<div class="mobile-search-bar" id="mobileSearchBar">
+  <input type="text" placeholder="Search" aria-label="Search NASA" id="mobileSearchInput"/>
+</div>
+ 
+<div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+ 
+  <div class="mobile-explore-section">
+    <a href="#">Missions</a>
+    <a href="#">Science</a>
+    <a href="#">Technology</a>
+    <a href="#">Humans in Space</a>
+    <a href="#">Solar System</a>
+    <a href="#">Universe</a>
+    <a href="#">Earth</a>
+    <a href="#">Climate Change</a>
+  </div>
+ 
+  <hr class="mobile-divider"/>
+ 
+  <div class="mobile-right-section">
+ 
+    <div class="mobile-nav-group-title" id="grp-news">
+      News &amp; Events
+      <svg class="m-chevron" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1 1l5 5 5-5"/>
+      </svg>
+    </div>
+    <div class="mobile-nav-sub" id="sub-news">
+      <a href="#">Latest News</a>
+      <a href="#">Press Releases</a>
+      <a href="#">Blogs</a>
+      <a href="#">Upcoming Events</a>
+      <a href="#">On-Demand Webcasts</a>
+      <a href="#">Social Media</a>
+    </div>
+ 
+    <div class="mobile-nav-group-title" id="grp-media">
+      Multimedia
+      <svg class="m-chevron" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1 1l5 5 5-5"/>
+      </svg>
+    </div>
+    <div class="mobile-nav-sub" id="sub-media">
+      <a href="#">Images</a>
+      <a href="#">Videos</a>
+      <a href="#">Podcasts</a>
+      <a href="#">Galleries</a>
+      <a href="#">3D Resources</a>
+      <a href="#">NASA Apps</a>
+    </div>
+ 
+    <div class="mobile-nasaplus-row" id="grp-nasa">
+      <div class="np-left">
+        <span class="np-label">NASA+</span>
+        <button class="live-btn" onclick="event.stopPropagation()">
+          <span class="live-dot"></span>Live
+        </button>
+      </div>
+      <svg class="m-chevron" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1 1l5 5 5-5"/>
+      </svg>
+    </div>
+    <div class="mobile-nav-sub" id="sub-nasa">
+      <a href="#">Watch NASA+</a>
+      <a href="#">Live Streams</a>
+      <a href="#">Shows &amp; Series</a>
+      <a href="#">Documentaries</a>
+      <a href="#">Schedule</a>
+    </div>
+ 
+  </div>
+</div>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const spans = hamburger.querySelectorAll('span');
+  const mobileSearchBar = document.getElementById('mobileSearchBar');
+  const mobileSearchToggle = document.getElementById('mobileSearchToggle');
+  const mobileSearchInput = document.getElementById('mobileSearchInput');
+ 
+  function closeAll() {
+    mobileMenu.classList.remove('open');
+    mobileSearchBar.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', false);
+    spans[0].style.transform = spans[2].style.transform = '';
+    spans[1].style.opacity = '';
+  }
+ 
+  hamburger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = mobileMenu.classList.toggle('open');
+    mobileSearchBar.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+    if (isOpen) {
+      spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+      spans[1].style.opacity = '0';
+      spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+    } else {
+      spans[0].style.transform = spans[2].style.transform = '';
+      spans[1].style.opacity = '';
+    }
+  });
+ 
+  mobileSearchToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = mobileSearchBar.classList.toggle('open');
+    if (isOpen) {
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+      spans[0].style.transform = spans[2].style.transform = '';
+      spans[1].style.opacity = '';
+      setTimeout(() => mobileSearchInput.focus(), 50);
+    }
+  });
+ 
+  function setupToggle(titleId, subId) {
+    const title = document.getElementById(titleId);
+    const sub = document.getElementById(subId);
+    title.addEventListener('click', () => {
+      const open = sub.classList.toggle('open');
+      title.classList.toggle('expanded', open);
+    });
+  }
+ 
+  setupToggle('grp-news', 'sub-news');
+  setupToggle('grp-media', 'sub-media');
+  setupToggle('grp-nasa', 'sub-nasa');
+ 
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target) &&
+        !mobileSearchToggle.contains(e.target) && !mobileSearchBar.contains(e.target)) {
+      closeAll();
+    }
+  });
+</script>
+</body>
+</html>
