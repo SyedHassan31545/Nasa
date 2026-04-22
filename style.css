@@ -16,7 +16,6 @@
       min-height: 100vh;
     }
  
-    /* ── NAVBAR ── */
     nav {
       background: var(--black);
       height: var(--nav-height);
@@ -30,7 +29,6 @@
       border-bottom: 1px solid #1a1a1a;
     }
  
-    /* ── LEFT SIDE ── */
     .nav-left {
       display: flex;
       align-items: center;
@@ -38,7 +36,6 @@
       flex: 1;
     }
  
-    /* Explore Dropdown Trigger */
     .explore-btn {
       display: flex;
       align-items: center;
