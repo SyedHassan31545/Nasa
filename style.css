@@ -891,3 +891,134 @@
   .cell-c { grid-column: 1 / 2; grid-row: 5 / 6; }
   .cell-d { grid-column: 1 / 2; grid-row: 6 / 7; }
 }
+
+.fn-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 30px 0 40px 0;
+}
+.fn-card {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.fn-card-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.fn-card-body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.fn-card-read  { 
+  font-family: "dm-mono", sans-serif;
+  font-weight: 500;
+  font-size: .7rem; 
+  line-height: 1em; 
+  letter-spacing: 3.5px; 
+  color: var(--black); 
+  text-transform: uppercase; }
+.fn-card-title { 
+  font-family: "Public Sans Web", sans-serif;;
+  font-size: .875rem; 
+  font-weight: 700; 
+  line-height: 1.25;
+  color: var(--black);
+}
+.fn-card-tag   {
+  display: flex; 
+  align-items: center; 
+  gap: 4px; 
+  font-size: 11px; 
+  font-weight: 500;
+  line-height: 1em; 
+  letter-spacing: 3.5px;
+  color: #58585b; 
+  text-transform: uppercase;
+}
+.tag-icon   { width: 13px; height: 13px; }
+
+@media (max-width: 1024px) { .fn-cards-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px)  { .fn-cards-grid { grid-template-columns: 1fr; } }
+
+.semi-hero {
+  height: 100vh;
+  background: url('./img/semi-hero.webp') no-repeat center/cover;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0 15%;
+}
+
+.semi-hero-content {
+  width: 50%;
+  margin-bottom: 15vh; 
+  color: #fff;
+}
+
+.semi-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  font-family: "inter",sans-serif;
+  margin-bottom: 10px;
+}
+
+.semi-hero-content p {
+  font-size: 1.1rem;
+  font-weight: 200;
+  line-height: 1.65;
+  margin-bottom: 15px;
+}
+
+.semi-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sh-label-icon {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: #D83933;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.2s;
+  }
+
+.semi-hero-btn:hover .sh-label-icon { background: #B50909; }
+  .sh-label-icon svg {
+    width: 10px; height: 10px;
+    color: var(--white);
+  }
+
+@media (max-width: 992px) {
+  .semi-hero-content {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .semi-hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .semi-hero-content {
+    width: 90%;
+    margin-bottom: 10vh;
+  }
+}
