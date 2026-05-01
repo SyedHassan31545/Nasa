@@ -1022,3 +1022,140 @@
     margin-bottom: 10vh;
   }
 }
+
+.Welcome-Universe {
+  padding: 2rem 0; 
+  margin: 50px;
+}
+
+.wttu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.wttu-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "inter", sans-serif;
+  line-height: .95em;
+  margin: 0;
+}
+
+.wdm {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "inter", sans-serif;
+  cursor: pointer;
+  line-height: 1em;
+  margin-right: .4rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.wdm-label-icon {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: #D83933;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.2s;
+  }
+
+.wdm:hover .wdm-label-icon { background: #B50909; }
+  .wdm-label-icon svg {
+    width: 10px; height: 10px;
+    color: var(--white);
+  }
+
+  @media (max-width: 480px) {
+  .fn {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .fn-heading { font-size: 1.6rem; }
+  .rb { font-size: 0.9rem; padding: 4px 10px; }
+}
+
+.wttu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.wttu-card {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.wttu-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.wttu-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 100%);
+  z-index: 1;
+}
+.wttu-card-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.05em;
+  margin-bottom: 25px;
+}
+.wttu-card-icon {
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: #D83933;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.2s;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
+  }
+.wttu-card-icon svg { width: 16px; height: 16px;}
+
+@media (max-width: 1024px) { .wttu-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px)  { .wttu-grid { grid-template-columns: 1fr; } }
+
+.M-N-A{
+  padding: 2rem 0; 
+  margin: 50px;
+}
+
+.mna {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.mna-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "inter", sans-serif;
+  line-height: .95em;
+  margin: 0;
+}
